@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Upload DORIA</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="../images/icon/doria.jpg">
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../style/style.css">
+		<link rel="stylesheet" href="../fontawesome/css/all.css">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="../bootstrap/jquery-3.6.0.js"></script>
+
+		
+	</head>
+	<body>
+		<div class="menu">
+			<img class="logo" src="../images/logo_doria.jpg" >
+			<a class="button" href="../index.html">Negocio</a>
+			<a class="button" href="analisis.html" >Analisis Descriptivo</a>
+			<a class="button" href="toolkit.html">Toolkit</a>
+			<a class="button" href="resultados.html">Resultados</a>
+			<a class="button" href="" style="background-color: #fae0bb;">Upload</a>
+		</div>
+		<div class="title">
+
+			<h1>Upload</h1><br><br><br>
+						
+		</div>
+		<div class="cargaFile">
+			<form id="cargaFile" enctype="multipart/form-data" method="post" action="https://waste-gen-api.herokuapp.com/docs#/Data%20Management/load_data_data_manager_load_data_post">
+				<input type="file" name="fileToUpload" id="fileToUpload" required="">
+				<input type="submit" name="enviarFile">
+			</form>
+			
+		</div>
+	
+		
+
+	</body>

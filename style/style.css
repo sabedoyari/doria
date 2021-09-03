@@ -1,0 +1,397 @@
+
+*{
+ 
+font-family: "Bebas Neue","Bahnschrift SemiBold Condensed";
+}
+
+/*Definicion de esilos para la fuentes*/
+body{
+  background-color: #dde0e9;
+  width: 100%;
+  height: 100%;
+  font-size: 80%;
+  
+}
+
+p {
+  font-size:1em;
+}
+h1 {
+  font-size:3em;
+}
+h2 {
+  font-size:1.4em;
+}
+
+/*FIN Definicion de esilos para la fuentes*/
+
+/* fin de zona común a todas las resoluciones */
+@media screen and (min-width:800px) {
+  body {
+    font-size:100%;
+    /* ampliamos los textos si mide más de 800px */
+  }
+}
+
+/* fin de la zona para más de 800px de ancho de pantalla */
+@media screen and (min-width:1200px) {
+  body {
+    font-size:100%;
+    /* ampliamos más aún los textos si mide más de 1200px */
+  }
+}
+
+
+
+/* fin de la zona para más de 1200px de ancho de pantalla */
+
+.modal-body{
+  justify-content: right;
+}
+
+/*Modal*/
+
+/*
+.modal{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+
+  animation: modal 1s 2s forwards;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.contenido{
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  background: white;
+  border-radius: 10px;
+}
+
+#cerrar{
+  display: none;
+}
+
+#cerrar + label{
+  position: fixed;
+  color: #fff;
+  font-size: 25px;
+  z-index: 50;
+  background: darkblue;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  right: 10px;
+  cursor: pointer;
+
+  animation: modal 1s 2s forwards;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#cerrar:checked + label, 
+#cerrar:checked ~ .modal{
+  display: none;
+}
+
+@keyframes modal{
+  100%{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+*/
+
+/*Fin Modal*/
+
+.menu{
+	position: absolute;
+	width: 170px;
+	height: 100%;
+	background-color: #004d91;
+}
+
+.title{
+  position: absolute;
+  left: 170px;
+  padding-right: 200px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  color: #004d91;
+  font-family: Arial Black !important;  
+}
+
+.title h1{
+  padding-top: 20px;
+}
+
+.producto{
+  position: absolute;
+  left: 180px;
+  top: 100px;
+  width: 300px;
+  height: 250px;
+  background-color: #FFFFFF;
+  text-align: center;
+  /*color: #004d91;*/
+  font-family: Arial Black !important; 
+}
+
+.imgNegocio{
+  width: 300px;
+  height: 250px;
+}
+
+.paragraf{
+  position: absolute;
+  top: 150px;
+  left: 270px;
+  right: 170px;
+  width: 800px;
+  /*justify-content:justify;*/
+  text-align: justify;
+  background-color: #FFFFFF;
+  color: #004d91;
+}
+
+.paragrafNegocio{
+  position: absolute;
+  top: 100px;
+  left: 490px;
+  right: 670px;
+  width: 680px;
+  height: 250px;
+  justify-content:justify;
+  text-align: justify;
+  background-color: #FFFFFF;
+  color: #004d91;
+}
+
+.paragrafNegocio p{
+  padding: 10px;
+}
+
+.graficaNegocio{
+  position: absolute;
+  top: 360px;
+  left: 180px;
+  width: 990px;
+  height: 200px;
+  background-color: #FFFFFF;
+}
+
+.imgGraf{
+ width: 990px;
+ height: 200px;
+}
+
+.paragraf p{
+  background-color: #ffffff;
+
+}
+
+.result1{
+  position: absolute;
+  left: 180px;
+  top: 120px;
+  width: 700px;
+  height: 440px;
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #004d91;
+  font-family: Arial Black !important; 
+}
+
+.result2{
+  position: absolute;
+  left: 890px;
+  top: 120px;
+  width: 300px;
+  height: 440px;
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #004d91;
+  font-family: Arial Black !important; 
+}
+
+
+.powerBI{
+
+  position: absolute;
+  left: 180px;
+  top: 120px;
+  width: 700px;
+  height: 440px;
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #004d91;
+  font-family: Arial Black !important; 
+}
+
+.resultPowerBI{
+  position: relative;
+  justify-content: left;
+  width: 900px;
+  height: 440px;
+}
+
+.logo{
+	width: 170px;
+  height: 140px; 
+  background-color: #004d91;
+}
+
+.logoModal{
+  width: 470px;
+  height: 300px;
+}
+
+.divCalcul{
+  position: absolute;
+  left: 180px;
+  top: 150px;
+  /*padding-left: 170px;*/
+  width: 340px;
+  height: 72%;
+  text-align: center;
+  color: #004d91;
+  font-family: Arial Black !important; 
+  background-color: #ffffff;
+}
+
+.infoCal{
+  position: absolute;
+  left: 530px;
+  top: 150px;
+  width: 740px;
+  height: 35%;
+  color: #004d91;
+  font-family: Arial Black !important; 
+  background-color: #ffffff;
+  text-align: justify;
+}
+
+.infoGrafic1{
+  position: absolute;
+  left: 530px;
+  top: 355px;
+  width: 370px;
+  height: 36%;
+  font-family: Arial Black !important; 
+  background-color: #ffffff;
+}
+
+.infoGrafic2{
+  position: absolute;
+  left: 910px;
+  top: 355px;
+  width: 360px;
+  height: 36%;
+  font-family: Arial Black !important; 
+  background-color: #ffffff;
+}
+
+.cargaFile{
+  position: absolute;
+  left: 180px;
+  top: 150px;
+}
+
+/*
+.calculadora{
+  background-image: url('../images/calculadora.jpg');
+  position: static;
+  padding-left: 1700px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora input{
+  width: 90%;
+  height: 30px;
+  margin: 0.5rem;
+}
+*/
+
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #ebeff1;
+  border: none;
+  color: #004d91;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 15px;
+  width: 150px;
+  text-transform: capitalize;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  
+}
+
+
+
+
+.button:hover{
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+content: '\00bb';  /* Entidades CSS. Para usar entidades HTML, use &#8594;*/
+position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+  background-color: #f9e1bc;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
